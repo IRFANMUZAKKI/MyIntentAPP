@@ -32,10 +32,10 @@ class MoveForResultActivity : AppCompatActivity(), View.OnClickListener {
             if (rg_number.checkedRadioButtonId != 0) {
                 var value = 0
                 when (rg_number.checkedRadioButtonId) {
-                    R.id.rb_7 -> value = 7
-                    R.id.rb_14 -> value = 14
-                    R.id.rb_33 -> value = 33
-                    R.id.rb_39 -> value = 39
+                    R.id.rb_1000 -> value = 1000
+                    R.id.rb_2000 -> value = 2000
+                    R.id.rb_3000 -> value = 3000
+                    R.id.rb_4000 -> value = 4000
                 }
 
                 val resultIntent = Intent()

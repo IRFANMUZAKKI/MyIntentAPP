@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnMoveForResult: Button = findViewById(R.id.btn_move_for_result)
         btnMoveForResult.setOnClickListener(this)
-        tvResult = findViewById(R.id.tv_result)
+
+        tvResult = findViewById(R.id.tv_result);
     }
 
     override fun onClick(v: View) {
@@ -47,14 +48,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_move_activity_data -> {
                 val moveWithDataIntent = Intent(this@MainActivity, MoveWithDataActivity::class.java)
-                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "IRFAN MUZAKKI")
+                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Irfan");
+
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 16)
                 startActivity(moveWithDataIntent)
             }
 
             R.id.btn_move_activity_object -> {
                 val person = Person(
-                    "IRFAN MUZAKKI",
+                    "irfan",
                     16,
                     "irfanmuzakki9c@gmail.com",
                     "Purwokerto"
@@ -68,6 +70,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val phoneNumber = "082144028255"
                 val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
                 startActivity(dialPhoneIntent)
+            }
+            R.id.btn_move_for_result -> {
+                val moveForResultIntent =
+                    Intent(this@MainActivity, MoveForResultActivity::class.java)
+                startActivityForResult(moveForResultIntent, REQUEST_CODE)
             }
         }
     }

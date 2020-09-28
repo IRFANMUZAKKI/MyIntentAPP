@@ -18,29 +18,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RadioButton
-            android:id="@+id/rb_7"
+            android:id="@+id/rb_1000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/_7" />
+            android:text="@string/_1000" />
         <RadioButton
-            android:id="@+id/rb_14"
+            android:id="@+id/rb_2000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/_14" />
+            android:text="@string/_2000" />
         <RadioButton
-            android:id="@+id/rb_33"
+            android:id="@+id/rb_3000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/_33" />
+            android:text="@string/_3000" />
         <RadioButton
-            android:id="@+id/rb_39"
+            android:id="@+id/rb_4000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/_39" />
+            android:text="@string/_4000" />
     </RadioGroup>
 
     <Button
